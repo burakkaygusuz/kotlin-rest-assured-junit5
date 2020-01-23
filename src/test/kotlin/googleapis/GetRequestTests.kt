@@ -2,10 +2,14 @@
 
 package googleapis
 
+import io.restassured.RestAssured.given
 import org.apache.http.HttpStatus
+import org.hamcrest.CoreMatchers.equalTo
+import org.hamcrest.CoreMatchers.not
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
+class GetRequestTests : BaseTest() {
 
     @Nested
     inner class `the status code should` {
@@ -36,9 +40,34 @@ import org.junit.jupiter.api.Test
                 .statusCode(HttpStatus.SC_NOT_FOUND)
         }
     }
-                .queryParam("key", apiKey)
 
-            request.get("/blogs/$blogId").then().statusCode(HttpStatus.SC_NOT_FOUND)
+    @Nested
+    inner class `blogId should` {
+
+        @Test
+        fun `be equal to 3213900 when queries the related blog url`() {
+
+            given()
+                .queryParam("key", apiKey)
+                .queryParam("url", "http://blogger-developers.googleblog.com")
+            .`when`()
+                .get("/blogs/byurl")
+            .then()
+                .assertThat()
+                .body("id", equalTo("3213900"))
+        }
+
+        @Test
+        fun `not be equal to 3213900 when queries the unrelated blog url`() {
+
+            given()
+                .queryParam("key", apiKey)
+                .queryParam("url", "https://google.com")
+            .`when`()
+                .get("/blogs/byurl")
+            .then()
+                .assertThat()
+                .body("id", not(equalTo("3213900")))
         }
 
     }
