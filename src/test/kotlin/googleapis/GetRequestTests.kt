@@ -2,20 +2,10 @@
 
 package googleapis
 
-import io.restassured.RestAssured.*
 import org.apache.http.HttpStatus
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
-class GetRequestTests {
-
-    @BeforeEach
-    fun setUp() {
-
-        baseURI = "https://www.googleapis.com"
-        basePath = "/blogger/v3"
-    }
 
     @Nested
     inner class `the status code should` {
