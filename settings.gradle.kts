@@ -1,2 +1,2 @@
-rootProject.name = "kotlin-with-rest-assured"
+rootProject.name = "kotlin-rest-assured-junit5"
 
