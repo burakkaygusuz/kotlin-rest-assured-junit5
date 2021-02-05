@@ -1,6 +1,6 @@
 @file:Suppress("ClassName")
 
-package googleapis
+package com.burakkaygusuz
 
 import io.restassured.module.kotlin.extensions.Given
 import io.restassured.module.kotlin.extensions.Then

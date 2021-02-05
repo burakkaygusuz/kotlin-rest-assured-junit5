@@ -1,4 +1,4 @@
-package googleapis
+package com.burakkaygusuz
 
 import io.restassured.RestAssured
 import org.junit.jupiter.api.AfterAll
