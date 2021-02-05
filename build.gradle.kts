@@ -3,14 +3,14 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.3.61"
-    idea
+    kotlin("jvm") version "1.4.30"
     java
-    eclipse
 }
 
 group = "kotlin-with-rest-assured"
-version = "1.0-SNAPSHOT"
+version = "1.0"
+
+description = "REST API Test with Rest Assured and Kotlin"
 
 repositories {
     mavenCentral()
