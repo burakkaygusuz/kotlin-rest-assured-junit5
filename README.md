@@ -1,4 +1,4 @@
-# Kotlin with Rest Assured
+# Kotlin & Rest Assured & Junit 5
 
 It is a simple test project prepared using [Rest Assured](http://rest-assured.io/), which makes it easy to test REST
 services with [Kotlin](https://kotlinlang.org/) programming
