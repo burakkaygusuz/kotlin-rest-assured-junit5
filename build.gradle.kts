@@ -16,8 +16,10 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    testImplementation("org.junit.jupiter:junit-jupiter:5.6.0")
-    testImplementation("io.rest-assured:rest-assured:4.2.0")
+    implementation("org.hamcrest:hamcrest:2.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.7.0")
+    testImplementation("io.rest-assured:rest-assured:4.3.3")
+    testImplementation("io.rest-assured:kotlin-extensions:4.3.3")
 }
 
 configure<JavaPluginConvention> {
