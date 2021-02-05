@@ -1,17 +1,22 @@
 package googleapis
 
-import io.restassured.RestAssured.*
-import org.junit.jupiter.api.BeforeEach
+import io.restassured.RestAssured
+import org.junit.jupiter.api.AfterAll
+import org.junit.jupiter.api.BeforeAll
+import org.junit.jupiter.api.TestInstance
 
-open class BaseTest{
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+open class BaseTest {
 
-    @BeforeEach
-    fun setUp(){
-        baseURI = "https://www.googleapis.com"
-        basePath = "/blogger/v3"
+    @BeforeAll
+    fun setUp() {
+        RestAssured.baseURI = "https://www.googleapis.com"
+        RestAssured.basePath = "/blogger/v3"
+        RestAssured.useRelaxedHTTPSValidation()
     }
 
-    companion object{
-        const val apiKey = "AIzaSyC-oGQs1Sx9YPWepK1-xC44qhQSzzU3iEk"
+    @AfterAll
+    fun tearDown() {
+        RestAssured.reset()
     }
 }
