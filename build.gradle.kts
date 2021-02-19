@@ -7,7 +7,7 @@ plugins {
     java
 }
 
-group = "kotlin-with-rest-assured"
+group = "kotlin-rest-assured-junit-5"
 version = "1.0"
 
 description = "REST API Test with Rest Assured and Kotlin"

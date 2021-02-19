@@ -17,8 +17,8 @@ language. [Google Blogger API v3.0](https://developers.google.com/blogger/docs/3
 ## Commands
 
 ```git
-git clone git@github.com:burakkaygusuz/kotlin-with-rest-assured.git
-cd kotlin-with-rest-assured
+git clone git@github.com:burakkaygusuz/kotlin-rest-assured-junit5.git
+cd kotlin-rest-assured-junit5
 gradle wrapper
 ./gradlew clean && ./gradlew test
 ```
