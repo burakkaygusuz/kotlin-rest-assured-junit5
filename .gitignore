@@ -12,3 +12,5 @@ build/
 
 ### Gradle Patch ###
 **/build/
+
+.DS_Store
