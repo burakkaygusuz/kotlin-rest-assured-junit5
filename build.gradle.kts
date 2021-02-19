@@ -17,7 +17,6 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
     implementation("org.hamcrest:hamcrest:2.2")
     testImplementation("org.junit.jupiter:junit-jupiter:5.7.0")
     testImplementation("io.rest-assured:rest-assured:4.3.3")
