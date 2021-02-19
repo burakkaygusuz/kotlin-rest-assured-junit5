@@ -7,11 +7,10 @@ language. [Google Blogger API v3.0](https://developers.google.com/blogger/docs/3
 ## Requirements
 
 - Generate an API Key via Google Cloud Platform Console
-- Restrict your key for Blogger API v3
 - Insert your API key to the field inside quotation marks of the below code
 
 ```kotlin
- private val apiKey: String = "<insert-your-google-api-key>"
+ const val apiKey: String = "<insert-your-google-api-key>"
 ```
 
 ## Commands
