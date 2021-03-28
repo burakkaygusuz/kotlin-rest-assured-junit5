@@ -31,7 +31,7 @@ tasks.test {
     useJUnitPlatform()
     testLogging {
         events(TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED)
-        exceptionFormat = TestExceptionFormat.FULL
+        exceptionFormat = TestExceptionFormat.SHORT
         showCauses = true
         showExceptions = true
         showStackTraces = true
