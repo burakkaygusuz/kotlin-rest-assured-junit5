@@ -1,4 +1,4 @@
-package com.burakkaygusuz
+package com.burakkaygusuz.tests
 
 import io.restassured.RestAssured
 import io.restassured.builder.RequestSpecBuilder
@@ -16,7 +16,7 @@ open class BaseTest {
 
     companion object {
         lateinit var requestSpecification: RequestSpecification
-        const val apiKey: String = "<insert-your-google-api-key>"
+        const val apiKey: String = "[YOUR_API_KEY]"
     }
 
     @BeforeAll
@@ -29,6 +29,7 @@ open class BaseTest {
             .setBaseUri("https://www.googleapis.com")
             .setBasePath("/blogger/v3")
             .addQueryParam("key", apiKey)
+            .addHeader("Accept", "application/json")
             .setContentType(ContentType.JSON)
             .setRelaxedHTTPSValidation()
             .setConfig(config)
