@@ -19,8 +19,8 @@ repositories {
 dependencies {
     implementation("org.hamcrest:hamcrest:2.2")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.5.20-M1")
-    testImplementation("io.rest-assured:rest-assured:4.3.3")
-    testImplementation("io.rest-assured:kotlin-extensions:4.3.3")
+    testImplementation("io.rest-assured:rest-assured:4.4.0")
+    testImplementation("io.rest-assured:kotlin-extensions:4.4.0")
 }
 
 configure<JavaPluginConvention> {
