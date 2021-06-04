@@ -11,7 +11,6 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.equalTo
 import org.junit.jupiter.api.Test
 
-
 class `Blogs Test` : BaseTest() {
 
     @Test
