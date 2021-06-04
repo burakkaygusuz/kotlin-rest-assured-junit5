@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     implementation("org.hamcrest:hamcrest:2.2")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.0-M1")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.5.20-M1")
     testImplementation("io.rest-assured:rest-assured:4.3.3")
     testImplementation("io.rest-assured:kotlin-extensions:4.3.3")
 }
