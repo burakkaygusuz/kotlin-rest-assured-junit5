@@ -22,7 +22,7 @@ dependencies {
     testImplementation("io.rest-assured:kotlin-extensions:4.4.0")
 }
 
-configure<JavaPluginConvention> {
+configure<JavaPluginExtension> {
     sourceCompatibility = JavaVersion.VERSION_11
 }
 
